@@ -24,6 +24,6 @@ int main(void) {
 	   	}
 	   }
 
-	printf("maximum element:%d minimum element:%d",array[max],array[min]);
+	printf("highest element vcalue in the array:%d\n lowest element value in the array:%d",array[max],array[min]);
 	return 0;
 }
