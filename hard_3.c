@@ -3,7 +3,7 @@
 int main()
 {
     int n,i;
-    printf("enter the number of array");
+    printf("enter the number of elements  array");
     scanf("%d",&n);
     if(n<=0)
      printf("0");
