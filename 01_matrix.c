@@ -5,6 +5,10 @@ int main()
 {
 	int n;
 	scanf("%d",&n);
+	if(n<=0)
+	printf("0");
+	else
+	{
 	int a[n][n],b[n][n],i,j,k,flag=0;
 	printf("enter 0 and 1s ");
 	  for(i=0;i<n;i++)
@@ -49,6 +53,6 @@ int main()
 		
 	}
 	
-	
+	}	
 	return 0;
 }
