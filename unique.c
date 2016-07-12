@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main()
@@ -5,8 +6,8 @@ int main()
     int n,i,hash[100000]={0},flag=0;
     printf("enter the number of elements  array");
     scanf("%d",&n);
-    if(n<=0)
-     printf("0");
+    if(n%2==0)
+     printf("plz give an odd count!!");
      else
      {
           int a[n];
@@ -18,10 +19,11 @@ int main()
           }
               for(i=0;i<n;i++)
               {
-                    if(hash[a[i]]==1)
+                    if(hash[a[i]]>=1)
                      {
-                        printf("%d",a[i]);
-                        flag=1;
+                        printf("%d",a[i]); flag=1;
+                       break;
+                       
                      }
               }
               if(flag==0)
