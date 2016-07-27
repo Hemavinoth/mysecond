@@ -9,6 +9,10 @@ int main(void) {
 	int num,i=0,k;
 	scanf("%d",&num);
 	scanf("%d",&k);
+	if(num<0)
+	printf("0");
+	else
+	{
 	while(num)
 	{
 		a[i++]=num%10;
@@ -18,13 +22,14 @@ int main(void) {
 	
 	qsort(a,i,sizeof(int),fun);
 
-       for(;i-->k;)
+    for(;k--;i--)
 	{
 		
 	}
 	for(k=0;k<i;k++)
 	{
 		printf("%d",a[k]);
+	 }
 	}
 	// your code goes here
 	return 0;
